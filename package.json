@@ -1,0 +1,78 @@
+{
+	"name": "px2vworvh",
+	"displayName": "px2vwORvh",
+	"description": "px2vw or px2vh",
+	"keywords": [
+		"vw",
+		"px vw",
+		"px to vw",
+		"px2vwORvh"
+	],
+	"version": "1.0.0",
+	"icon": "icon.png",
+	"license": "MIT",
+	"licenseUrl": "LICENSE",
+	"publisher": "Rianbower",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Riunshow/px2vworvh.git"
+	},
+	"homepage": "https://github.com/Riunshow/px2vworvh",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:sass",
+		"onLanguage:stylus"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [{
+			"command": "extension.px2vworvh",
+			"title": "px2vwORvh"
+		}],
+		"configuration": {
+			"type": "object",
+			"title": "px2vwORvh configure",
+			"properties": {
+				"px2vworvh.width": {
+					"type": "number",
+					"default": 1920,
+					"description": "design width"
+				},
+				"px2vworvh.height": {
+					"type": "number",
+					"default": 1080,
+					"description": "design height"
+				},
+				"px2vworvh.toFixedNum": {
+					"type": "number",
+					"default": 4,
+					"description": "vh vw 保留小数长度"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.1.4",
+		"vscode": "^1.1.25",
+		"tslint": "^5.8.0",
+		"@types/node": "^8.10.25",
+		"@types/mocha": "^2.2.42"
+	}
+}
