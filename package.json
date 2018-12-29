@@ -12,7 +12,7 @@
 	"icon": "icon.png",
 	"license": "MIT",
 	"licenseUrl": "LICENSE",
-	"publisher": "Rianbower",
+	"publisher": "Riunshow",
 	"engines": {
 		"vscode": "^1.25.0"
 	},
