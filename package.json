@@ -8,7 +8,7 @@
 		"px to vw",
 		"px2vwORvh"
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "icon.png",
 	"license": "MIT",
 	"licenseUrl": "LICENSE",
@@ -35,10 +35,12 @@
 	],
 	"main": "./out/extension",
 	"contributes": {
-		"commands": [{
-			"command": "extension.px2vworvh",
-			"title": "px2vwORvh"
-		}],
+		"commands": [
+			{
+				"command": "extension.px2vworvh",
+				"title": "px2vwORvh"
+			}
+		],
 		"configuration": {
 			"type": "object",
 			"title": "px2vwORvh configure",
